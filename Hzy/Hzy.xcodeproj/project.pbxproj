@@ -16,6 +16,7 @@
 		74390A3D1E44890B00E56E0C /* HzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74390A3C1E44890B00E56E0C /* HzyTests.swift */; };
 		74390A481E44890B00E56E0C /* HzyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74390A471E44890B00E56E0C /* HzyUITests.swift */; };
 		74390A561E4489A800E56E0C /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74390A551E4489A800E56E0C /* SeparatorLine.swift */; };
+		7471EF681E45DD28000D69CF /* HzyTabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7471EF671E45DD28000D69CF /* HzyTabBarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		74390A471E44890B00E56E0C /* HzyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HzyUITests.swift; sourceTree = "<group>"; };
 		74390A491E44890B00E56E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74390A551E4489A800E56E0C /* SeparatorLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorLine.swift; sourceTree = "<group>"; };
+		7471EF671E45DD28000D69CF /* HzyTabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HzyTabBarControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				74390A241E44890B00E56E0C /* AppDelegate.swift */,
 				74390A261E44890B00E56E0C /* ViewController.swift */,
 				74390A551E4489A800E56E0C /* SeparatorLine.swift */,
+				7471EF661E45DCFC000D69CF /* TabBarViewControllerAnimation */,
 				74390A281E44890B00E56E0C /* Main.storyboard */,
 				74390A2E1E44890B00E56E0C /* Assets.xcassets */,
 				74390A301E44890B00E56E0C /* LaunchScreen.storyboard */,
@@ -129,6 +132,14 @@
 				74390A491E44890B00E56E0C /* Info.plist */,
 			);
 			path = HzyUITests;
+			sourceTree = "<group>";
+		};
+		7471EF661E45DCFC000D69CF /* TabBarViewControllerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7471EF671E45DD28000D69CF /* HzyTabBarControllerDelegate.swift */,
+			);
+			path = TabBarViewControllerAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				74390A271E44890B00E56E0C /* ViewController.swift in Sources */,
 				74390A251E44890B00E56E0C /* AppDelegate.swift in Sources */,
 				74390A2D1E44890B00E56E0C /* Hzy.xcdatamodeld in Sources */,
+				7471EF681E45DD28000D69CF /* HzyTabBarControllerDelegate.swift in Sources */,
 				74390A561E4489A800E56E0C /* SeparatorLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +528,7 @@
 				74390A4E1E44890B00E56E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74390A4F1E44890B00E56E0C /* Build configuration list for PBXNativeTarget "HzyTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				74390A511E44890B00E56E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74390A521E44890B00E56E0C /* Build configuration list for PBXNativeTarget "HzyUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				74390A541E44890B00E56E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

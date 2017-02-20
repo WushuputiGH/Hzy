@@ -16,6 +16,7 @@
 		74390A3D1E44890B00E56E0C /* HzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74390A3C1E44890B00E56E0C /* HzyTests.swift */; };
 		74390A481E44890B00E56E0C /* HzyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74390A471E44890B00E56E0C /* HzyUITests.swift */; };
 		74390A561E4489A800E56E0C /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74390A551E4489A800E56E0C /* SeparatorLine.swift */; };
+		7458256C1E498A6E00EE18F1 /* HZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7458256B1E498A6E00EE18F1 /* HZYNavigationController.m */; };
 		7471EF681E45DD28000D69CF /* HzyTabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7471EF671E45DD28000D69CF /* HzyTabBarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,9 @@
 		74390A471E44890B00E56E0C /* HzyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HzyUITests.swift; sourceTree = "<group>"; };
 		74390A491E44890B00E56E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74390A551E4489A800E56E0C /* SeparatorLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorLine.swift; sourceTree = "<group>"; };
+		745825691E498A6D00EE18F1 /* Hzy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hzy-Bridging-Header.h"; sourceTree = "<group>"; };
+		7458256A1E498A6E00EE18F1 /* HZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZYNavigationController.h; sourceTree = "<group>"; };
+		7458256B1E498A6E00EE18F1 /* HZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZYNavigationController.m; sourceTree = "<group>"; };
 		7471EF671E45DD28000D69CF /* HzyTabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HzyTabBarControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,12 +110,15 @@
 				74390A241E44890B00E56E0C /* AppDelegate.swift */,
 				74390A261E44890B00E56E0C /* ViewController.swift */,
 				74390A551E4489A800E56E0C /* SeparatorLine.swift */,
+				7458256A1E498A6E00EE18F1 /* HZYNavigationController.h */,
+				7458256B1E498A6E00EE18F1 /* HZYNavigationController.m */,
 				7471EF661E45DCFC000D69CF /* TabBarViewControllerAnimation */,
 				74390A281E44890B00E56E0C /* Main.storyboard */,
 				74390A2E1E44890B00E56E0C /* Assets.xcassets */,
 				74390A301E44890B00E56E0C /* LaunchScreen.storyboard */,
 				74390A331E44890B00E56E0C /* Info.plist */,
 				74390A2B1E44890B00E56E0C /* Hzy.xcdatamodeld */,
+				745825691E498A6D00EE18F1 /* Hzy-Bridging-Header.h */,
 			);
 			path = Hzy;
 			sourceTree = "<group>";
@@ -211,6 +218,7 @@
 					74390A201E44890B00E56E0C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9LY5F86E2S;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					74390A371E44890B00E56E0C = {
@@ -278,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74390A271E44890B00E56E0C /* ViewController.swift in Sources */,
+				7458256C1E498A6E00EE18F1 /* HZYNavigationController.m in Sources */,
 				74390A251E44890B00E56E0C /* AppDelegate.swift in Sources */,
 				74390A2D1E44890B00E56E0C /* Hzy.xcdatamodeld in Sources */,
 				7471EF681E45DD28000D69CF /* HzyTabBarControllerDelegate.swift in Sources */,
@@ -431,12 +440,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9LY5F86E2S;
 				INFOPLIST_FILE = Hzy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wushuputi.Hzy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hzy/Hzy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -445,12 +457,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9LY5F86E2S;
 				INFOPLIST_FILE = Hzy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Wushuputi.Hzy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hzy/Hzy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
